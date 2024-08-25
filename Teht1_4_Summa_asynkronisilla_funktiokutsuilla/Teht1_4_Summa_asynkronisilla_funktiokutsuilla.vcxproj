@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f37b1ccc-d1ef-46d4-b92e-50de0447ecc1}</ProjectGuid>
-    <RootNamespace>Teht12Tilitänostaminen</RootNamespace>
+    <ProjectGuid>{2231cf8d-4993-4a6d-ac59-0f8952476e7b}</ProjectGuid>
+    <RootNamespace>Teht14Summaasynkronisillafunktiokutsuilla</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
