@@ -27,6 +27,7 @@
     <ProjectGuid>{421790cc-425c-489c-b7f8-2ebcb10526b1}</ProjectGuid>
     <RootNamespace>Teht11Summanlaskeminenrinnakaisesti</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Teht1_Summan_laskeminen_rinnakaisesti</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

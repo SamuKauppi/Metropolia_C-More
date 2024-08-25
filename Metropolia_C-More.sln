@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht1_1_Summan_laskeminen_rinnakaisesti", "Teht1_1_Summan_laskeminen_rinnakaisesti\Teht1_1_Summan_laskeminen_rinnakaisesti.vcxproj", "{421790CC-425C-489C-B7F8-2EBCB10526B1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht1_Summan_laskeminen_rinnakaisesti", "Teht1_Summan_laskeminen_rinnakaisesti\Teht1_1_Summan_laskeminen_rinnakaisesti.vcxproj", "{421790CC-425C-489C-B7F8-2EBCB10526B1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht1_2_Tilitä_nostaminen", "Teht1_2_Tilitä_nostaminen\Teht1_2_Tilitä_nostaminen.vcxproj", "{F37B1CCC-D1EF-46D4-B92E-50DE0447ECC1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht2_Tilitä_nostaminen", "Teht2_Tilitä_nostaminen\Teht1_2_Tilitä_nostaminen.vcxproj", "{F37B1CCC-D1EF-46D4-B92E-50DE0447ECC1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht1_3_Rinnakkaista_pelin_laskentaa", "Teht1_3_Rinnakkaista_pelin_laskentaa\Teht1_3_Rinnakkaista_pelin_laskentaa.vcxproj", "{E6BA3C5A-C96C-430E-9BB5-0D3B52406FAB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht3_Rinnakkaista_pelin_laskentaa", "Teht3_Rinnakkaista_pelin_laskentaa\Teht1_3_Rinnakkaista_pelin_laskentaa.vcxproj", "{E6BA3C5A-C96C-430E-9BB5-0D3B52406FAB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht1_4_Summa_asynkronisilla_funktiokutsuilla", "Teht1_4_Summa_asynkronisilla_funktiokutsuilla\Teht1_4_Summa_asynkronisilla_funktiokutsuilla.vcxproj", "{2231CF8D-4993-4A6D-AC59-0F8952476E7B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht4_Summa_asynkronisilla_funktiokutsuilla", "Teht4_Summa_asynkronisilla_funktiokutsuilla\Teht1_4_Summa_asynkronisilla_funktiokutsuilla.vcxproj", "{2231CF8D-4993-4A6D-AC59-0F8952476E7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht5_Taulukon_käsittely_standardikirjaston_avulla", "Teht5_Taulukon_käsittely_standardikirjaston_avulla\Teht1_5_Taulukon_käsittely_standardikirjaston_avulla.vcxproj", "{902DBA5D-6342-4330-956D-EFD9758D3667}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teht6_Pelin_laskentaa_asynkronisilla_funktiokutsuilla", "Teht6_Pelin_laskentaa_asynkronisilla_funktiokutsuilla\Teht1_6_Pelin_laskentaa_asynkronisilla_funktiokutsuilla.vcxproj", "{E1F21A51-C141-4B3B-8C93-C276EFCEA072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,22 @@ Global
 		{2231CF8D-4993-4A6D-AC59-0F8952476E7B}.Release|x64.Build.0 = Release|x64
 		{2231CF8D-4993-4A6D-AC59-0F8952476E7B}.Release|x86.ActiveCfg = Release|Win32
 		{2231CF8D-4993-4A6D-AC59-0F8952476E7B}.Release|x86.Build.0 = Release|Win32
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Debug|x64.ActiveCfg = Debug|x64
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Debug|x64.Build.0 = Debug|x64
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Debug|x86.ActiveCfg = Debug|Win32
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Debug|x86.Build.0 = Debug|Win32
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Release|x64.ActiveCfg = Release|x64
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Release|x64.Build.0 = Release|x64
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Release|x86.ActiveCfg = Release|Win32
+		{902DBA5D-6342-4330-956D-EFD9758D3667}.Release|x86.Build.0 = Release|Win32
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Debug|x64.ActiveCfg = Debug|x64
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Debug|x64.Build.0 = Debug|x64
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Debug|x86.Build.0 = Debug|Win32
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Release|x64.ActiveCfg = Release|x64
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Release|x64.Build.0 = Release|x64
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Release|x86.ActiveCfg = Release|Win32
+		{E1F21A51-C141-4B3B-8C93-C276EFCEA072}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
