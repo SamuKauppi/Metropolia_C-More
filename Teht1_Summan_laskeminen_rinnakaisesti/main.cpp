@@ -28,8 +28,8 @@ int main()
 	//	num = rand() % 11;
 	//}
 
-	vector<thread> threads;									// M‰‰ritell‰‰n s‰ikeet vektoriin
-	vector<int> results(thread_count);						// M‰‰ritell‰‰n osasummien palautus vektori
+	vector<thread> threads;	// M‰‰ritell‰‰n s‰ikeet vektoriin
+	vector<int> results(thread_count);	// M‰‰ritell‰‰n osasummien palautus vektori
 	size_t elements_in_threads = num_count / thread_count;	// M‰‰ritell‰‰n osasummien m‰‰r‰
 
 	for (size_t i = 0; i < thread_count; i++)
