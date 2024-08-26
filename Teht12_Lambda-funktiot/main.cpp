@@ -15,6 +15,7 @@ struct myclass
 
 int main()
 {
+	// Create random hitpoints
 	srand(time(0));
 	vector<int> hit_points(100);
 	for_each(hit_points.begin(), hit_points.end(), [](int& i) { i = rand() % 151 + 50;});
@@ -38,6 +39,9 @@ int main()
 			i = i <= 100 ? 0 : i - 100;
 		};
 	for_each(hits4.begin(), hits4.end(), lammas);
+
+	// Sort 
+	sort(hits4.begin(), hits4.end(), [](int a, int b) {return a > b;});
 
 	return 0;
 }
