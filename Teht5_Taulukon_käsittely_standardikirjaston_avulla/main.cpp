@@ -17,6 +17,7 @@ int main()
 	// T‰m‰ suoritusm‰‰re tarkoittaa, ett‰ algoritmi suoritetaan yksitt‰isess‰ s‰ikeess‰, 
 	// per‰kk‰in, kuten tavallisessa sekventiaalisessa ohjelmoinnissa.
 	for_each(execution::seq, t.begin(), t.end(), [](int& n) { n++;});
+
 	auto t2 = chrono::high_resolution_clock::now();
 	int timer1 = chrono::duration_cast<chrono::milliseconds>(t2 - t1).count();
 	cout << "\nsequenced_policy suoritusaika: " << timer1 << " ms\n";
@@ -37,8 +38,6 @@ int main()
 	auto t5 = chrono::high_resolution_clock::now();
 	// For each parallel_unsequenced_policy. 
 	// T‰m‰ suoritusm‰‰re yhdist‰‰ rinnakkais- ja sekventiaalisuorituksen hyˆdyt. 
-	// Se ei vain salli rinnakkaista k‰sittely‰, vaan voi myˆs hyˆdynt‰‰ vektorointia ja 
-	// muita modernin prosessorin optimointeja.
 	for_each(execution::par_unseq, t.begin(), t.end(), [](int& n) {n++;});
 
 	auto t6 = chrono::high_resolution_clock::now();
