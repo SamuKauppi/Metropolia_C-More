@@ -15,7 +15,7 @@ int main()
 {
 
 	// M‰‰ritell‰‰n numeroiden m‰‰r‰
-	const int num_count = 100000;
+	const int num_count = 1000000;
 
 	// M‰‰ritell‰‰n s‰ikeiden m‰‰r‰t ja numeroiden arvot
 	const size_t thread_count = thread::hardware_concurrency();
