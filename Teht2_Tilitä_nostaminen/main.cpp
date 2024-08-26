@@ -17,12 +17,12 @@ void editing_account(int count, int amount)
 
 int main()
 {
-	const int starting_value = 10000000;
+	const int starting_value = 1000000000;
 	account = starting_value;
 
 	thread add(editing_account, starting_value, 1);
 	thread take(editing_account, starting_value, -1);
-	
+
 	add.join();
 	take.join();
 

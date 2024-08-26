@@ -17,7 +17,7 @@ void editing_account(int count, int amount)
 
 int main()
 {
-	const int starting_value = 10000000;
+	const int starting_value = 1000000000;
 	account = starting_value;
 
 	future<void> fut_add = async(launch::async, editing_account, starting_value, 1);
@@ -28,4 +28,6 @@ int main()
 
 	cout << "Starting value: " << starting_value;
 	cout << "\nCurrent value: " << account;
+
+	return 0;
 }
