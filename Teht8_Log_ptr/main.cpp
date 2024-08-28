@@ -64,10 +64,12 @@ public:
     // Operators
     T* operator ->() {
         std::lock_guard<mutex> lock(mtx);
+        cout << "\n" << " operator-> " << &_i;
         return _i;
     };
     T& operator*() {
         std::lock_guard<mutex> lock(mtx);
+        cout << "\n" << " operator* " << &_i;
         return *_i;
     };
     Log_ptr<T>& operator = (const Log_ptr<T>& lp)
