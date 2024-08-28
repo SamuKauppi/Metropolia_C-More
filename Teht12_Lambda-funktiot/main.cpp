@@ -32,7 +32,7 @@ int main()
 	vector<int> hits3(hit_points);
 	for_each(hits3.begin(), hits3.end(), [](int& i) { i = i <= 100 ? 0 : i - 100; });
 
-	// Nimetty lambda funktiolla
+	// Nimetyllä lambda funktiolla
 	vector<int> hits4(hit_points);
 	auto lammas = [&](int& i)
 		{
