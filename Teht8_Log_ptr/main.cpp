@@ -1,24 +1,37 @@
 #include <iostream>
 #include <chrono>
+#include <atomic>
+#include <mutex>
+#include <vector>
+#include <future>
 
-using namespace std;
+using std::cout;
+using std::shared_ptr;
+using std::mutex;
 
+// Lock_guard
+mutex mtx;
+
+// Keeps track of the number of references
 class ReferenceCounter
 {
 public:
+    ReferenceCounter() : _count(0) {}
+
     void add_ref()
     {
-        _count++;
+        _count.fetch_add(1, std::memory_order_relaxed);
     }
     int rm_ref()
     {
-        return _count--;
+        return _count.fetch_sub(1, std::memory_order_acq_rel);
     }
 
 private:
-    int _count;
+    std::atomic<int> _count;
 };
 
+// Smart pointers
 template<class T> class Log_ptr
 {
 public:
@@ -30,27 +43,33 @@ public:
     };
     Log_ptr(T* i) : _i(i)
     {
-        cout << "\nomistajuus siiretty " << &_i;
+        cout << "\n" << " omistajuus siiretty " << &_i;
 
         _rc = new ReferenceCounter();
         _rc->add_ref();
     };
-    Log_ptr(const Log_ptr<T>& lp): _i(lp._i), _rc(lp._rc)
+    Log_ptr(const Log_ptr<T>& lp) : _i(lp._i), _rc(lp._rc)
     {
-        cout << "\nomistajuus siiretty " << &_i;
+        cout << "\n" << " omistajuus siiretty " << &_i;
 
         _rc->add_ref();
     };
     // Deconstructor
     ~Log_ptr()
     {
-        cout << "\nolio tuhottu " << &_i;
+        cout << "\n" << " olio tuhottu " << &_i;
 
         RemoveRef();
     };
     // Operators
-    T* operator ->() { return _i; };
-    T& operator*() { return *_i; };
+    T* operator ->() {
+        std::lock_guard<mutex> lock(mtx);
+        return _i;
+    };
+    T& operator*() {
+        std::lock_guard<mutex> lock(mtx);
+        return *_i;
+    };
     Log_ptr<T>& operator = (const Log_ptr<T>& lp)
     {
         if (this != &lp)
@@ -105,7 +124,7 @@ shared_ptr<Simple> use_simple(shared_ptr<Simple>& p)
 
 int main()
 {
-    // shared_ptr kokeilu
+    // shared_ptr test
     shared_ptr<Simple> p1(new Simple);
     p1 = use_simple(p1);
 
