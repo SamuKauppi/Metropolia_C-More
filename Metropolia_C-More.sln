@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scoll_Test", "Scoll_Test\Sc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tikkuspel", "Tikkuspel\Tikkuspel.vcxproj", "{96FD0DF4-AD09-4A0F-861E-2C583B289A7D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest", "UnitTest\UnitTest.vcxproj", "{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{96FD0DF4-AD09-4A0F-861E-2C583B289A7D}.Release|x64.Build.0 = Release|x64
 		{96FD0DF4-AD09-4A0F-861E-2C583B289A7D}.Release|x86.ActiveCfg = Release|Win32
 		{96FD0DF4-AD09-4A0F-861E-2C583B289A7D}.Release|x86.Build.0 = Release|Win32
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Debug|x64.ActiveCfg = Debug|x64
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Debug|x64.Build.0 = Debug|x64
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Debug|x86.Build.0 = Debug|Win32
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Release|x64.ActiveCfg = Release|x64
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Release|x64.Build.0 = Release|x64
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Release|x86.ActiveCfg = Release|Win32
+		{B7EF0390-F9D7-45BC-93BE-F1FE7AEB9DCC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
